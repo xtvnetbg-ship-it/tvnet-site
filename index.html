@@ -1,35 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="bg">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TVNet</title>
+
 <style>
 body{margin:0;font-family:Arial;background:#f5f7fb;color:#1a2a3a}
-header{background:#0b63ce;color:white;padding:20px;font-size:24px;font-weight:bold}
-.container{padding:40px}
-h1{font-size:42px;margin-bottom:10px}
-p{font-size:18px;color:#555}
-.btn{display:inline-block;margin-top:20px;padding:14px 20px;border-radius:999px;background:#0b63ce;color:white;text-decoration:none;font-weight:bold}
-.card{background:white;padding:20px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.05);margin-top:20px}
+header{background:#0b63ce;color:white;padding:20px;display:flex;justify-content:space-between;align-items:center}
+nav a{color:white;margin:0 10px;text-decoration:none;font-weight:bold}
+.hero{padding:60px;text-align:center}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero p{font-size:20px;color:#555}
+.btn{display:inline-block;margin-top:20px;padding:14px 24px;border-radius:999px;background:#0b63ce;color:white;text-decoration:none;font-weight:bold}
+.section{padding:40px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{flex:1;min-width:250px;background:white;padding:20px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.05)}
+.price{font-size:28px;font-weight:bold;margin-top:10px}
+footer{background:#0b63ce;color:white;padding:20px;text-align:center;margin-top:40px}
 </style>
+
 </head>
+
 <body>
 
-<header>TVNet</header>
+<header>
+<div>TVNet</div>
+<nav>
+<a href="#">Интернет</a>
+<a href="#">Телевизия</a>
+<a href="#">Планове</a>
+<a href="#">Покритие</a>
+<a href="#">Контакти</a>
+</nav>
+</header>
 
-<div class="container">
-<h1>Оптичен интернет и телевизия</h1>
-<p>Съвременен ISP сайт – планове, покритие и бърза заявка.</p>
-
+<section class="hero">
+<h1>Светъл, ясен ISP сайт</h1>
+<p>Оптичен интернет и телевизия за дома и бизнеса</p>
 <a class="btn" href="#">Виж планове</a>
+</section>
+
+<section class="section">
+<h2>Най-популярен пакет</h2>
+<div class="cards">
+<div class="card">
+<h3>Интернет + ТВ</h3>
+<p>300 Mbps + 100+ канала</p>
+<div class="price">24.99 лв/месец</div>
+<a class="btn" href="#">Заяви</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Планове за дома</h2>
+<div class="cards">
+<div class="card">
+<h3>Basic</h3>
+<p>100 Mbps</p>
+<div class="price">19.99 лв</div>
+</div>
 
 <div class="card">
-<h2>Най-популярен пакет</h2>
-<p>300 Mbps + ТВ</p>
-<strong>24.99 лв/месец</strong>
+<h3>Standard</h3>
+<p>300 Mbps</p>
+<div class="price">24.99 лв</div>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<p>1 Gbps</p>
+<div class="price">34.99 лв</div>
 </div>
 </div>
+</section>
+
+<section class="section">
+<h2>Покритие</h2>
+<p>Провери дали имаш покритие във вашия район.</p>
+<a class="btn" href="#">Провери</a>
+</section>
+
+<section class="section">
+<h2>Бизнес решения</h2>
+<p>Специални оферти за офиси и компании.</p>
+<a class="btn" href="#">Научи повече</a>
+</section>
+
+<section class="section">
+<h2>Поддръжка</h2>
+<p>Свържи се с нас при проблем или въпрос.</p>
+<a class="btn" href="#">Контакт</a>
+</section>
+
+<footer>
+📞 0888 123 456 | Работно време: 09:00–21:00
+</footer>
 
 </body>
 </html>
